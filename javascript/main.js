@@ -1,3 +1,9 @@
+$(document).ready(function () {
+    // Insert every detail in a div named after its json key
+    // <div class="jsonStreet">[jsonStream.addressee.Skanemejerier.address.street]</div>
+})
+
+
 /* const heading = document.querySelector("h1");
 heading.textContent = "Hej Björn! Läser du detta?";
  */

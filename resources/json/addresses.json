@@ -4,18 +4,18 @@
             "name": "Skånemejerier i Malmö",
             "address": {
                 "Street": "Boplatsgatan",
-                "Streetnumber": "9",
-                "Postalcode": "25151",
-                "City": "Malmö"
+                "streetnumber": "9",
+                "postalcode": "25151",
+                "city": "Malmö"
             }
         },
         "Frigoscandia": {
             "name": "Frigoscandia Ljusekulla",
             "address": {
-                "Street": "Kardangatan",
-                "Streetnumber": "23",
-                "Postalcode": "24151",
-                "City": "Helsingborg"
+                "street": "Kardangatan",
+                "streetnumber": "23",
+                "postalcode": "24151",
+                "city": "Helsingborg"
             }
         },
         "Outofhome": {
