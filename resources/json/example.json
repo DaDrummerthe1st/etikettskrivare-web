@@ -1,0 +1,17 @@
+{
+    "adressee": {
+        "one": {
+            "name": {
+                "firstname": "Carl",
+                "lastname": "marx"
+            },
+            "stopsign": 1
+        },
+        "two": {
+            "name": {
+                "firsname": "Lisa",
+                "lastname": "Nilsson"
+            }
+        }
+    }
+}
