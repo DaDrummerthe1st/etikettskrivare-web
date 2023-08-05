@@ -8,12 +8,15 @@
     <link rel="shortcut icon" href="resources/media/favicon.png">
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h1>h1 fungerar inte längre</h1>
 
     <a href="addAddressee.php">Lägg till Adressat</a>
+    <a href="printLAbel.php">Skriv ut en testsida</a>
 
     <div>
         <input type="button" value="Se adressater" id="btnAddressees">
