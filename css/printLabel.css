@@ -1,6 +1,68 @@
 /* https://stackoverflow.com/questions/4292373/javascript-print-without-print-dialog-box */
 
+/* TODO: use FlexBox so "name" (and street?) will not break line 
+https://stackoverflow.com/questions/36247140/why-dont-flex-items-shrink-past-content-size
+*/
+
+/* This erases all headers and footers
+https://stackoverflow.com/questions/1960939/disabling-browser-print-options-headers-footers-margins-from-page
+*/
 @page {
     size: auto;
+    /* auto is the initial value */
     margin: 0mm;
+    /* this affects the margin in the printer settings */
+}
+
+p {
+    margin: 0pt;
+}
+
+#receiver {
+    border-radius: 50pt;
+    border: 5pt solid black;
+    padding: 15pt;
+    padding-left: 35pt;
+    padding-top: 5pt;
+}
+
+#receiverName {
+    font-size: 75pt;
+    font-weight: bolder;
+}
+
+#receiverStreet,
+#receiverStreetNumber,
+#receiverPostalCode {
+    font-size: 25pt;
+}
+
+#receiverCity {
+    font-size: 35pt;
+    font-weight: bolder;
+
+}
+
+/* cross through box with svg
+https://jsfiddle.net/02ffvyeo/ */
+#sender {
+    width: 60%;
+    margin-top: 25pt;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='black' stroke-width='1'/><path d='M0 0 L100 100 ' stroke='black' stroke-width='1'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%, auto;
+    border: dotted black 5pt;
+}
+
+#senderName {
+    font-size: 25pt;
+    font-weight: bolder;
+    margin-top: 2.5pt;
+}
+
+#senderCity {
+    font-size: 15pt;
+    font-weight: bolder;
+    margin-bottom: 10pt;
 }

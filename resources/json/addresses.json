@@ -1,9 +1,9 @@
 {
     "adressee": {
         "Skanemejerier": {
-            "name": "Skånemejerier i Malmö",
+            "name": "Skånemejerier",
             "address": {
-                "Street": "Boplatsgatan",
+                "street": "Boplatsgatan",
                 "streetnumber": "9",
                 "postalcode": "25151",
                 "city": "Malmö"
@@ -14,7 +14,7 @@
             "address": {
                 "street": "Kardangatan",
                 "streetnumber": "23",
-                "postalcode": "24151",
+                "postalcode": "12345",
                 "city": "Helsingborg"
             }
         },
