@@ -1,0 +1,18 @@
+.addressee {
+    border: solid blue 2em;
+    margin: 2em 0;
+    width: 50em;
+}
+
+h3 {
+    font: 3em sans-serif;
+    font-weight: 900;
+    margin: 0.5em 0;
+}
+
+h5 {
+    font-size: 2em;
+    text-align: right;
+    margin: 0;
+    width: 100%;
+}

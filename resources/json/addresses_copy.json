@@ -1,0 +1,34 @@
+{
+    "adressee": [
+        {
+            "name": "Skånemejerier",
+            "address": [
+                {
+                    "street": "Boplatsgatan",
+                    "streetnumber": "9",
+                    "postalcode": "25151",
+                    "city": "Malmö"
+                }
+            ]
+        },
+        {
+            "name": "Frigoscandia Ljusekulla",
+            "address": [
+                {
+                    "street": "Kardangatan",
+                    "streetnumber": "23",
+                    "postalcode": "12345",
+                    "city": "Helsingborg"
+                }
+            ]
+        },
+        {
+            "name": "Out Of Home",
+            "address": [
+                {
+                    "co": "2"
+                }
+            ]
+        }
+    ]
+}

@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="resources/media/favicon.png">
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/qrcode.min.js"></script>
 
     <link rel="stylesheet" href="css/printLabel.css" />
 
@@ -23,13 +24,13 @@
         <p id="miscField3"></p>
     </div>
     <div id="receiver">
-        <p id="qrReceiverAdressGoogleMaps"></p>
         <p id="receiverName">test</p>
         <p id="receiverCo"></p>
         <p id="receiverStreet"></p>
         <p id="receiverStreetNumber"></p>
         <p id="receiverPostalCode"></p>
         <p id="receiverCity"></p>
+        <div id="qrReceiverAdressGoogleMaps"></div>
     </div>
 
     <div id="qrCompleteLabel">
@@ -49,11 +50,8 @@
 
     </div>
 
-    <div id="barcodePalletNr">
+    <div id="barcodePalletNr"></div>
 
-    </div>
-
-    <script src="javascript/jquery.qrcode.min.js"></script>
     <script src="javascript/printLabel.js"></script>
 
 </body>
