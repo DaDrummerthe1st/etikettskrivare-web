@@ -36,7 +36,15 @@ $(document).ready(function () {
                     // city from c/o - adress
                     jsonStream.adressee['0'][`${coNumber}`].address['0'].city
                 );
-                $(".adressList div").append('<div class="content">Appended DIV</div>')
+
+                // printout div
+                $("#adressList").
+                    append(`
+                        <div class="addressee">
+                            <h3>${listInfo['0']['name']}</h3>
+                            <h5>c/o ${listInfo['0'].adress['0']['coName']}, ${listInfo['0'].adress['0']['city']}</h5>
+                        </div>
+                    `);
             } else {
                 listInfo = [{
                     "name": jsonStream.adressee['0'][`${i}`].name,
@@ -53,6 +61,15 @@ $(document).ready(function () {
                 // console name & city
                 console.log(jsonStream.adressee['0'][`${i}`].name +
                     ", " + jsonStream.adressee['0'][`${i}`].address['0'].city);
+
+                // printout div
+                $("#adressList").
+                    append(`
+                        <div class="addressee">
+                            <h3>${listInfo['0']['name']}</h3>
+                            <h5>${listInfo['0'].adress['0']['city']}</h5>
+                        </div>
+                    `);
             }
         }
     });

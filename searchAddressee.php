@@ -12,25 +12,7 @@
     <link rel="stylesheet" href="css/listAdressees.css">
 </head>
 <body>
-    <div id="adressList">
-        <div class="addressee">
-            <h3>Skånska Majonäser</h3>
-            <h5>Tostarp</h5>
-        </div>
-        <div class="addressee">
-            <h3>Skånska Lapptäcken</h3>
-            <h5>Ålandshav</h5>
-        </div>
-        <div class="addressee">
-            <h3>Skånska Trofasta</h3>
-            <h5>Åstorp</h5>
-        </div>
-        <div class="addressee">
-            <h3>Skånska Sidenpyjamaser</h3>
-            <h5>Åkersberga</h5>
-        </div>
-        <div id="adressee"></div>
-    </div>
+    <div id="adressList"></div>
     <script src="javascript/listOfReceiptients.js"></script>
 </body>
 </html>
