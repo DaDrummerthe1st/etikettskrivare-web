@@ -1,34 +1,36 @@
 {
     "adressee": [
         {
-            "name": "Skånemejerier",
-            "address": [
-                {
-                    "street": "Boplatsgatan",
-                    "streetnumber": "9",
-                    "postalcode": "25151",
-                    "city": "Malmö"
-                }
-            ]
-        },
-        {
-            "name": "Frigoscandia Ljusekulla",
-            "address": [
-                {
-                    "street": "Kardangatan",
-                    "streetnumber": "23",
-                    "postalcode": "12345",
-                    "city": "Helsingborg"
-                }
-            ]
-        },
-        {
-            "name": "Out Of Home",
-            "address": [
-                {
-                    "co": "2"
-                }
-            ]
+            "0": {
+                "name": "Skånemejerier",
+                "address": [
+                    {
+                        "street": "Boplatsgatan",
+                        "streetnumber": "9",
+                        "postalcode": "25151",
+                        "city": "Malmö"
+                    }
+                ]
+            },
+            "1": {
+                "name": "Frigoscandia Ljusekulla",
+                "address": [
+                    {
+                        "street": "Kardangatan",
+                        "streetnumber": "23",
+                        "postalcode": "12345",
+                        "city": "Helsingborg"
+                    }
+                ]
+            },
+            "2": {
+                "name": "Out Of Home",
+                "address": [
+                    {
+                        "co": "1"
+                    }
+                ]
+            }
         }
     ]
 }
