@@ -15,33 +15,73 @@
 
 <body>
     <div id="addAddress">
-        <h1>Här kan du lägga till adressat</h1>
-
-        <label for="addressee">Adressat</label>
-        <input type="text" name="addressee" id="addressee">
-
-        <br>
-
-        <label for="streetName">Gatunamn och siffra</label>
-        <input type="text" name="streetName" id="streetName">
-
-        <br>
-
-        <label for="postalCode">Postnummer</label>
-        <input type="text" name="postalCode" id="postalCode">
-
-        <br>
-
-        <label for="town">Ort</label>
-        <input type="text" name="town" id="town">
-
-        <br>
-
-        <input type="submit" value="Spara">
-
-        <script src="javascript/addAddresses.js"></script>
-
+        <form action="#" method="post">
+            <h1>Här kan du lägga till adressat</h1>
+            <label for="name">Namn</label>
+            <input type="text" name="name" id="name">
+            <br />
+            <label for="streetName">Gatunamn</label>
+            <input type="text" name="streetName" id="streetName">
+            <br />
+            <label for="streetnumber">Gatnummer</label>
+            <input type="number" name="streetnumber" id="streetnumber">
+            <br />
+            <label for="postalCode">Postnummer</label>
+            <input type="number" name="postalCode" id="postalCode">
+            <br />
+            <label for="town">Ort</label>
+            <input type="text" name="town" id="town">
+            <br />
+            <input type="submit" value="Spara">
+        </form>
     </div>
+
+<script>
+    document.getElementById("name").value = "standard name";
+    document.getElementById("streetName").value = "standard street";
+    document.getElementById("streetnumber").value = "12";
+    document.getElementById("postalCode").value = "12345";
+    document.getElementById("town").value = "standard town";
+</script>
+
+<?php
+
+$jsonDatabase = "resources/json/addresses.json";
+
+// protect data and erase unwanted characters
+// https://stackoverflow.com/questions/2109325/how-do-i-strip-all-spaces-out-of-a-string-in-php
+
+// create an object with all user input
+$unsafeInput = new stdClass();
+$unsafeInput->name = $_POST["name"];
+$unsafeInput->streetName = $_POST["streetName"];
+$unsafeInput->streetnumber = $_POST["streetnumber"];
+$unsafeInput->postalCode = $_POST["postalCode"];
+$unsafeInput->town = $_POST["town"];
+
+/* echo var_dump($unsafeInput);
+echo get_object_vars($unsafeInput); */
+
+$jsonEncodeNewAdressee = json_encode($unsafeInput);
+echo $jsonEncodeNewAdressee;
+
+// open file for writing only, pointer at the end. Create if not exist
+$openedFile = fopen($jsonDatabase, "a");
+
+fwrite($openedFile, $jsonEncodeNewAdressee);
+
+// close file
+fclose($openedFile);
+
+// TODO When writing code to append to JSON:
+// https://stackoverflow.com/questions/7895335/append-data-to-a-json-file-with-php#answer-21725885
+// Use fopen in a try / catch / finally - manner
+// https://www.php.net/manual/en/language.exceptions.php
+
+// One way of preventing double additions to the JSON-database
+$_POST = [];
+
+?>
 </body>
 
 </html>
