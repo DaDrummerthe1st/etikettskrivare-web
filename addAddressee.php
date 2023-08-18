@@ -46,7 +46,7 @@
 
 <?php
 
-$jsonDatabase = "resources/json/addresses.json";
+$filename = "resources/json/addresses_test.json";
 
 // protect data and erase unwanted characters
 // https://stackoverflow.com/questions/2109325/how-do-i-strip-all-spaces-out-of-a-string-in-php
@@ -66,12 +66,42 @@ $jsonEncodeNewAdressee = json_encode($unsafeInput);
 echo $jsonEncodeNewAdressee;
 
 // open file for writing only, pointer at the end. Create if not exist
-$openedFile = fopen($jsonDatabase, "a");
+/* $openedJsonFile = fopen($jsonDatabase, "a"); */
+// read the file if present
+$handle = @fopen($filename, 'r+');
 
-fwrite($openedFile, $jsonEncodeNewAdressee);
+// create the file if needed
+if ($handle === null)
+{
+    $handle = fopen($filename, 'w+');
+}
 
-// close file
-fclose($openedFile);
+if ($handle)
+{
+    // seek to the end
+    fseek($handle, 0, SEEK_END);
+
+    // are we at the end of is the file empty
+    if (ftell($handle) > 0)
+    {
+        // move back a byte
+        fseek($handle, -1, SEEK_END);
+
+        // add the trailing comma
+        fwrite($handle, ',', 1);
+
+        // add the new json string
+        fwrite($handle, json_encode($unsafeInput));
+    }
+    else
+    {
+        // write the first event inside an array
+        fwrite($handle, json_encode(map($unsafeInput)));
+    }
+
+        // close the handle on the file
+        fclose($handle);
+}
 
 // TODO When writing code to append to JSON:
 // https://stackoverflow.com/questions/7895335/append-data-to-a-json-file-with-php#answer-21725885
