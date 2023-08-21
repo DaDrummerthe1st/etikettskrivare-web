@@ -49,10 +49,18 @@ The different techniques used:
   - [x] Apache2
   - [ ] MariaDB / Mysql
 - [ ] Clean up amongst files.
-  Example, each json file is used while creating each micro part of this project. One is for displaying the list of receptients, one is for writing a new recieptient etc. It is therefor not possible to just delete a file since its configuration is a part of that particular solution.
-- [ ] Find out exact quality of sticker labels, including size and physical printer
-- [ ] How to retrieve a newand unique waybill number from Frigoscandias system?
+  - [ ] Use only one JSON-file
+    - [ ] Move to use MySQL
+  - [ ] Use AJAX and only one page for all functionalities
+### Physical World
+- [ ] Find out exact quality and size of sticker labels
+  - [ ] Brand of available physical printer
+    - [ ] Testrun on this printer
+- [ ] How to retrieve a new and unique waybill number from Frigoscandias system?
+### Enhancements
 - [ ] A printed label might need replacing or reprinting. Package count has to occur at some point before departure.
-  Two labels might need to be merged thus throwing away one of the labels.
+  - [ ] Two labels might need to be merged thus throwing away one of the labels.
+  - [ ] Perhaps final loading should include scanning
+- [ ] Weighing?
+  - [ ] Generating QR-code with weight information for parcel scanner?
 - [ ] Peripheral information about package can be included (weight, containment etc)
-- [ ] Perhaps final loading should include scanning and weighing? Then exact information is available automatically?! "Parcel scanning" is actualised but not yet complete at Frigo.
