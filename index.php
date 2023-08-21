@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h1>h1 fungerar inte längre</h1>
+    <h1>h1 ändras inte av js</h1>
 
     <a href="addAddressee.php">Lägg till Adressat</a>
     <a href="printLAbel.php">Skriv ut en testsida</a>
