@@ -72,3 +72,6 @@ If we would like to include ie a handheld text based terminal it would probably 
 - [ ] Weighing?
   - [ ] Scale generating QR-code with weight information for easier parcel scanner handling?
 - [ ] Peripheral information about package can be included (weight, containment etc)
+
+## Helpful links
+* [clean restart of a docker image](https://docs.tibco.com/pub/mash-local/4.3.0/doc/html/docker/GUID-BD850566-5B79-4915-987E-430FC38DAAE4.html)
