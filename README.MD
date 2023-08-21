@@ -2,7 +2,10 @@
 
 ## What to solve?
 This system is meant to be used as a computer touchscreen on the wall next to the gate out of which whole orders of wagons and pallets are loaded onto Frigoscandias trucks at Skånemejerier in Malmö, Sweden.
-A historical problem has been for a long time several different markings on a common A4-paper telling where the pallets/packages/wagons are bound after omex (redistribution, goods coming to one place packaged as on shipping getting split up to several adressees). These papers have either gone missing (from blowing away from the pallets/packages/wagons) or are forgotten by the packagers to be put on the goods. If EVERY pallets/packages/wagons always has to have a printed label from this system it is much easier to teach new packagers to remember doing it.
+  
+  A historical problem has been for a long time several different markings on a common A4-paper telling where the pallets/packages/wagons are bound after omex (redistribution, goods coming to one place packaged as on shipping getting split up to several adressees).
+  
+  These papers have either gone missing (from blowing away from the pallets/packages/wagons) or are forgotten by the packagers to be put on the goods. If EVERY pallets/packages/wagons always has to have a printed label from this system it is much easier to teach new packagers to remember doing it.
 
 **The label HAS to contain at least the recieptients address.**
 
