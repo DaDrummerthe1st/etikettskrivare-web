@@ -1,8 +1,8 @@
 # Etikettskrivare
-This system is meant to be used as a computer touchscreen connected to a glue labeler, on the wall next to the gate out of which whole orders of wagons and pallets are loaded onto *Frigoscandias* trucks at *Skånemejerier* in Malmö, Sweden.
+This system is meant to be used as a computer touchscreen connected to a sticky label printer next to the 3-4 gates out of which orders of wagons and pallets are loaded onto *Frigoscandias* trucks at *Skånemejerier* in Malmö, Sweden.
 
 ## What to solve?
-Individual labels on each package are mandatory for functioning resorting at OMEX in Frigoscandia Helsingborg. Previously used A4 printed papers are blown away or thrashed making the package unsendable.
+Individual labels on each package are mandatory for functioning resorting at OMEX at Frigoscandia, Helsingborg. Previously used A4 printed papers are blown away or thrashed making the package unsendable.
 
 ## How to solve it?  
 1. **The label HAS to contain at least the receptients address.**
@@ -13,26 +13,26 @@ Individual labels on each package are mandatory for functioning resorting at OME
 1. QR-code with complete label info
 
 ## General
-This setup includes a Docker LAMP and a web tool for printing labels on a labelwriter. The first has to be manually installed because of local configuration demands. Purpose is to write travel labels for goods. Configuration right now is goods from Skånemejerier to clients.
-   The different techniques used:
-   - php (changing and adding addressees)
-   - html, css, js (displaying on touchscreen)
-   - js (printer function)
+The different techniques used:
+- php (changing and adding addressees)
+- html, css, js (displaying on touchscreen)
+- js (printer function)
 
 ## Manual settings
-1. Install Docker LAMP from [this](https://github.com/sprintcube/docker-compose-lamp) location.
-   - configure .env file or copy the one included here
-   - Follow install instructions. If .env-file is up for change, just run
-      ´´´
+1. Manually install Docker LAMP from [this](https://github.com/sprintcube/docker-compose-lamp) location.
+   - copy the .env file included [here](resources/conf/dockerLAMP/.env)
+   - Follow [install instructions](https://github.com/sprintcube/docker-compose-lamp#installation).
+  If .env-file is up for change, just run
+      ´´´console
       docker-compose -d up
       ´´´
       in the same directory as you cloned the lamp-server
-2. Make sure the apache server has accessrights to this folder recursively
+1. Make sure the apache server has accessrights to this folder recursively
    - for Linux, use 
    ```console
    setfacl -R -m g:devFirmB:rw .
    ```
-   m for append change and R for recursive.
+   *m for append change and R for recursive.*
 
 ## Physical setup / wishlist
 * Touchscreen computer
