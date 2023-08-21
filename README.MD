@@ -18,7 +18,7 @@ Other good to have, sorted in need-grades.
 1. gMaps QR-code link with recieptients adress (when omex-personell are unsure of where it is bound for, meaning on which next truck to load it at omex)
 1. QR-code with complete label info
 
-  `#ffffff`TODO One problem to solve already is the glue cannot get stuck on the metal or the goods and has to be firm enough to not blow away. That kind of label does exist, according to IT-personell at Frigoscandia.
+  `TODO` One problem to solve already is the glue cannot get stuck on the metal or the goods and has to be firm enough to not blow away. That kind of label does exist, according to IT-personell at Frigoscandia.
 
 ## General
 This setup includes a Docker LAMP and a web tool for printing labels on a labelwriter. The first has to be manually installed because of local configuration demands. Purpose is to write travel labels for goods. Configuration right now is goods from Skånemejerier to clients.
@@ -26,11 +26,11 @@ This setup includes a Docker LAMP and a web tool for printing labels on a labelw
 ## Setup
 * A touchscreen (prefered)
   * For choosing which adressee and sender to be used
-    * Waybill number is fetched (TODO from where and how?)
+    * Waybill number is fetched (`TODO` from where and how?)
     * Package number (CCNR(?)) is generated automatically or fetched (from where) and availble for external systems.
-      * TODO If more than one label is printed for the same pallets/packages/wagons it has to be a way to count it as only one.
-      * TODO if two pallets/packages/wagons are merged then the system has to find out
-   * TODO Weight and other meta data is greatly appreciated but not available at the moment.
+      * `TODO` If more than one label is printed for the same pallets/packages/wagons it has to be a way to count it as only one.
+      * `TODO` if two pallets/packages/wagons are merged then the system has to find out
+   * `TODO` Weight and other meta data is greatly appreciated but not available at the moment.
      * Perhaps a scale included in scanning of label before loading? that means each pallets/packages/wagon is getting its actual weight including tare
 * A label printer.
 
@@ -49,7 +49,7 @@ This setup includes a Docker LAMP and a web tool for printing labels on a labelw
    ```
    m for modify and R for recursive.
 
-## TODO - list
+## `TODO` - list
 1. Sätta upp en lokal servermiljö med:
    - php (för att ändra och lägga till data lokalt, gäller adresserna)
    - html, css (för att presentera på touchscreen)
