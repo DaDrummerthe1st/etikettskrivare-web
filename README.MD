@@ -22,6 +22,10 @@ Other good to have, sorted in need-grades.
 
 ## General
 This setup includes a Docker LAMP and a web tool for printing labels on a labelwriter. The first has to be manually installed because of local configuration demands. Purpose is to write travel labels for goods. Configuration right now is goods from Skånemejerier to clients.
+  The different techniques used:
+  php (changing and adding addressees)
+  html, css, js (displaying on touchscreen)
+  js (printer function)
 
 ## Setup
 * A touchscreen (prefered)
@@ -50,7 +54,6 @@ This setup includes a Docker LAMP and a web tool for printing labels on a labelw
    m for append change and R for recursive.
 
 ## `TODO` - list
-1. Sätta upp en lokal servermiljö med:
-   - php (för att ändra och lägga till data lokalt, gäller adresserna)
-   - html, css (för att presentera på touchscreen)
-   - js (för att hantera utskrift och utskrivning av data på skärmen)
+- [] Set up a local server developer environment including php, css, html, js
+- [] Clean up amongst files.
+        Example, each json file is used while creating each micro part of this project. One is for displaying the list of receptients, one is for writing a new recieptient etc. It is therefor not possible to just delete a file since its configuration is a part of that particular solution.
