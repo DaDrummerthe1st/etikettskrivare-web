@@ -18,19 +18,19 @@ The different techniques used:
 - html, css, js (displaying on touchscreen)
 - js (printer function)
 
-## Manual settings
+### Manual setup settings for developing
 1. Manually install Docker LAMP from [this](https://github.com/sprintcube/docker-compose-lamp) location.
    - copy the .env file included [here](resources/conf/dockerLAMP/.env)
    - Follow [install instructions](https://github.com/sprintcube/docker-compose-lamp#installation).
      If .env-file is up for change, just run
       ```console
-      docker-compose -d up
+      docker-compose up -d
       ```
       in the same directory as you cloned the lamp-server
 1. Make sure the apache server has accessrights to this folder recursively
    - for Linux, use 
    ```console
-   setfacl -R -m g:devFirmB:rw .
+   setfacl -R -m g:www-data:rw .
    ```
    *m for append change and R for recursive.*
 
