@@ -45,9 +45,9 @@ This setup includes a Docker LAMP and a web tool for printing labels on a labelw
 2. Make sure the apache server has accessrights to this folder recursively
    - for Linux, use 
    ```console
-   setfacl -mR g:devFirmB:rw .
+   setfacl -R -m g:devFirmB:rw .
    ```
-   m for modify and R for recursive.
+   m for append change and R for recursive.
 
 ## `TODO` - list
 1. Sätta upp en lokal servermiljö med:
