@@ -42,10 +42,10 @@ The different techniques used:
 
 ## `TODO` - list
 - [ ] Set up a local server developer environment including 
-  - [ ] php
-  - [ ] css
-  - [ ] html
-  - [ ] js
+  - [x] php
+  - [x] css
+  - [x] html
+  - [x] js
   - [x] Apache2
   - [ ] MariaDB / Mysql
 - [ ] Clean up amongst files.

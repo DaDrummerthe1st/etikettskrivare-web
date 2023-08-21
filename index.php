@@ -18,9 +18,9 @@
     <a href="addAddressee.php">Lägg till Adressat</a>
     <a href="printLAbel.php">Skriv ut en testsida</a>
 
-    <div>
-        <input type="button" value="Se adressater" id="btnAddressees">
-    </div>
+    <form action="searchAddressee.php">
+        <input type="submit" value="Kolla Lista">
+    </form>
 
     <script src="javascript/main.js"></script>
 </body>
