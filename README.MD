@@ -12,25 +12,12 @@ Individual labels on each package are mandatory for functioning resorting at OME
 1. gMaps QR-code link with recieptients adress (when omex-personell are unsure of where it is bound for, meaning on which next truck to load it at omex)
 1. QR-code with complete label info
 
-  `TODO` The glue on the labels cannot get stuck on the wagon metal or the goods but still has to be firm enough to not blow away. That kind of label does exist, according to IT-personell at Frigoscandia HQ/IT.
-
 ## General
 This setup includes a Docker LAMP and a web tool for printing labels on a labelwriter. The first has to be manually installed because of local configuration demands. Purpose is to write travel labels for goods. Configuration right now is goods from Skånemejerier to clients.
    The different techniques used:
-   -php (changing and adding addressees)
+   - php (changing and adding addressees)
    - html, css, js (displaying on touchscreen)
    - js (printer function)
-
-## Setup
-* A touchscreen (preffered)
-  * For choosing which adressee and sender to be used
-    * Waybill number is fetched (`TODO` from where and how?)
-    * Package number (CCNR(?)) is generated automatically or fetched (from where) and availble for external systems.
-      * `TODO` If more than one label is printed for the same pallets/packages/wagons it has to be a way to count it as only one.
-      * `TODO` if two pallets/packages/wagons are merged then the system has to find out
-   * `TODO` Weight and other meta data is greatly appreciated but not available at the moment.
-     * Perhaps a scale included in scanning of label before loading? that means each pallets/packages/wagon is getting its actual weight including tare
-* A label printer.
 
 ## Manual settings
 1. Install Docker LAMP from [this](https://github.com/sprintcube/docker-compose-lamp) location.
@@ -47,7 +34,19 @@ This setup includes a Docker LAMP and a web tool for printing labels on a labelw
    ```
    m for append change and R for recursive.
 
+## Physical setup / wishlist
+* Touchscreen computer
+* Label printer
+* Scale
+* Barcode scanner
+
 ## `TODO` - list
 - [ ] Set up a local server developer environment including php, css, html, js
 - [ ] Clean up amongst files.
   Example, each json file is used while creating each micro part of this project. One is for displaying the list of receptients, one is for writing a new recieptient etc. It is therefor not possible to just delete a file since its configuration is a part of that particular solution.
+- [ ] Find out exact quality of sticker labels, including size and physical printer
+- [ ] How to retrieve a newand unique waybill number from Frigoscandias system?
+- [ ] A printed label might need replacing or reprinting. Package count has to occur at some point before departure.
+  Two labels might need to be merged thus throwing away one of the labels.
+- [ ] Peripheral information about package can be included (weight, containment etc)
+- [ ] Perhaps final loading should include scanning and weighing? Then exact information is available automatically?! "Parcel scanning" is actualised but not yet complete at Frigo.
