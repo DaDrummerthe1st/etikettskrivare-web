@@ -46,7 +46,7 @@ The different techniques used:
   - [ ] css
   - [ ] html
   - [ ] js
-  - [X] Apache2
+  - [x] Apache2
   - [ ] MariaDB / Mysql
 - [ ] Clean up amongst files.
   Example, each json file is used while creating each micro part of this project. One is for displaying the list of receptients, one is for writing a new recieptient etc. It is therefor not possible to just delete a file since its configuration is a part of that particular solution.
