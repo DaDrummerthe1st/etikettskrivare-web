@@ -111,8 +111,6 @@ if ($handle)
 // One way of preventing double additions to the JSON-database
 $_POST = [];
 
-// trying a new comment in order to try if everything works well since I accidentally removed all local files
-
 ?>
 </body>
 
