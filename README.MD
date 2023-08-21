@@ -7,7 +7,7 @@ This system is meant to be used as a computer touchscreen on the wall next to th
   
   These papers have either gone missing (from blowing away from the pallets/packages/wagons) or are forgotten by the packagers to be put on the goods. If EVERY pallets/packages/wagons always has to have a printed label from this system it is much easier to teach new packagers to remember doing it.
 
-**The label HAS to contain at least the recieptients address.**
+**The label HAS to contain at least the receptients address.**
 
 Other good to have, sorted in need-grades.
   Having this in consideration from the start means the label area needs to be bigger, thus being easier to stick to the pallets/packages/wagons.
@@ -54,6 +54,6 @@ This setup includes a Docker LAMP and a web tool for printing labels on a labelw
    m for append change and R for recursive.
 
 ## `TODO` - list
-- [] Set up a local server developer environment including php, css, html, js
-- [] Clean up amongst files.
-        Example, each json file is used while creating each micro part of this project. One is for displaying the list of receptients, one is for writing a new recieptient etc. It is therefor not possible to just delete a file since its configuration is a part of that particular solution.
+- [ ] Set up a local server developer environment including php, css, html, js
+- [ ] Clean up amongst files.
+  Example, each json file is used while creating each micro part of this project. One is for displaying the list of receptients, one is for writing a new recieptient etc. It is therefor not possible to just delete a file since its configuration is a part of that particular solution.
