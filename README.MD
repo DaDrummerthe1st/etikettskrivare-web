@@ -2,15 +2,15 @@
 This system is meant to be used as a computer touchscreen connected to a sticky label printer next to the 3-4 gates out of which orders of wagons and pallets are loaded onto *Frigoscandias* trucks at *Skånemejerier* in Malmö, Sweden.
 
 ## What to solve?
-Individual labels on each package are mandatory for functioning resorting at OMEX at Frigoscandia, Helsingborg. Previously used A4 printed papers are blown away or thrashed making the package unsendable.
+Individual labels on each package are mandatory for a functioning resorting at OMEX at Frigoscandia, Helsingborg. Previously used A4 printed papers are blown away or thrashed making the package unsendable.
 
 ## Inclusion on label  
 1. **The label HAS to contain at least the receptients address.**
-1. Sender adress (for this system to be applied to other Frigoscandia Customers)
-1. Barcode for waybill number
-1. Barcode with packageNumber
-1. gMaps QR-code link with recieptients adress (when omex-personell are unsure of where it is bound for, meaning on which next truck to load it at omex)
-1. QR-code with complete label info
+* Sender adress (for this system to be applied to other Frigoscandia Customers)
+* Barcode for waybill number
+* Barcode with packageNumber
+* gMaps QR-code link with recieptients adress (when omex-personell are unsure of where it is bound for, meaning on which next truck to load it at omex)
+* QR-code with complete label info
 
 ## General technical information
 ### The different languages used:
@@ -56,8 +56,14 @@ Individual labels on each package are mandatory for functioning resorting at OME
   - [ ] Brand of available physical printer
     - [ ] Testrun on this printer
 - [ ] How to retrieve a new and unique waybill number from Frigoscandias system?
+- [ ] Package Unique serial number
+  - [ ] How to retrieve
+  - [ ] Whats the correct name?
 ### Enhancements
-- [ ] A printed label might need replacing or reprinting. Package count has to occur at some point before departure.
+- [ ] Label handling
+  - [ ] The type of package(wood/plastic pallet, wagon, carton etc) has to be included in the metainformation
+  - [ ] A printed label might need replacing ~~or reprinting~~.
+  - [ ] Package count has to occur at some point before departure.
   - [ ] Two labels might need to be merged thus throwing away one of the labels.
   - [ ] Perhaps final loading should include scanning
 - [ ] Weighing?
