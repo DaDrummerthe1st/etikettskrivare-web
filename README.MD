@@ -3,19 +3,22 @@
 ## What to solve?
 This system is meant to be used as a computer touchscreen on the wall next to the gate out of which whole orders of wagons and pallets are loaded onto Frigoscandias trucks at Skånemejerier in Malmö, Sweden.
   
-  A historical problem has been for a long time several different markings on a common A4-paper telling where the pallets/packages/wagons are bound after omex (redistribution, goods coming to one place packaged as on shipping getting split up to several adressees).
+  A historical problem has been for a long time several different labelling techniques on a common A4-paper telling where the pallets/packages/wagons are bound after omex (redistribution). Omex is where goods coming to one place packaged as one shipping, then getting split up to several adressees.
   
   These papers have either gone missing (from blowing away from the pallets/packages/wagons) or are forgotten by the packagers to be put on the goods. If EVERY pallets/packages/wagons always has to have a printed label from this system it is much easier to teach new packagers to remember doing it.
 
 **The label HAS to contain at least the recieptients address.**
 
-Other good to have, sorted in need-grades. Having this in consideration from the start means the label area needs to be bigger, thus being easier to stick to the pallets/packages/wagons. One problem to solve already is the glue cannot get stuck on the metal or the goods and has to be firm enough to not blow away. That kind of label does exist, according to IT-personell at Frigoscandia.
+Other good to have, sorted in need-grades.
+  Having this in consideration from the start means the label area needs to be bigger, thus being easier to stick to the pallets/packages/wagons.
+  
 1. Sender adress (for this system to be applied to other Frigoscandia Customers)
 1. Barcode for waybill number
 1. Barcode with packageNumber
+1. gMaps QR-code link with recieptients adress (when omex-personell are unsure of where it is bound for, meaning on which next truck to load it at omex)
+1. QR-code with complete label info
 
-2. gMaps QR-code link with recieptients adress (when omex-personell are unsure of where it is bound for, meaning on which next truck to load it at omex)
-2. QR-code with complete label info
+  `#ffffff`TODO One problem to solve already is the glue cannot get stuck on the metal or the goods and has to be firm enough to not blow away. That kind of label does exist, according to IT-personell at Frigoscandia.
 
 ## General
 This setup includes a Docker LAMP and a web tool for printing labels on a labelwriter. The first has to be manually installed because of local configuration demands. Purpose is to write travel labels for goods. Configuration right now is goods from Skånemejerier to clients.
