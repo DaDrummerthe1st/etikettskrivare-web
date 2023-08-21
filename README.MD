@@ -3,6 +3,7 @@ This system is meant to be used as a computer touchscreen connected to a sticky 
 
 ## What to solve?
 Individual labels on each package are mandatory for a functioning resorting at OMEX at Frigoscandia, Helsingborg. Previously used A4 printed papers are blown away or thrashed making the package unsendable.
+  Managers might need to manually update routing information and add addressees.
 
 ## Inclusion on label  
 1. **The label HAS to contain at least the receptients address.**
@@ -13,6 +14,8 @@ Individual labels on each package are mandatory for a functioning resorting at O
 * QR-code with complete label info
 
 ## General technical information
+I've chosen web to display search results since it can be applied to a great number of physical screens (tablets, Vehicle-Mounted Mobile Computer, cell phones, work stations etc).
+If we would like to include ie a handheld text based terminal it would probably also be possible.
 ### The different languages used:
 - php (changing and adding addressees)
 - html, css, js (displaying on touchscreen)
@@ -67,5 +70,5 @@ Individual labels on each package are mandatory for a functioning resorting at O
   - [ ] Two labels might need to be merged thus throwing away one of the labels.
   - [ ] Perhaps final loading should include scanning
 - [ ] Weighing?
-  - [ ] Generating QR-code with weight information for parcel scanner?
+  - [ ] Scale generating QR-code with weight information for easier parcel scanner handling?
 - [ ] Peripheral information about package can be included (weight, containment etc)
