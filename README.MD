@@ -30,7 +30,7 @@ The different techniques used:
 1. Make sure the apache server has accessrights to this folder recursively
    - for Linux, use 
    ```console
-   setfacl -R -m g:www-data:rw .
+   setfacl -R -m g:www-data:xrw .
    ```
    *m for append change and R for recursive.*
 
