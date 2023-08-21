@@ -53,4 +53,4 @@ This setup includes a Docker LAMP and a web tool for printing labels on a labelw
 1. Sätta upp en lokal servermiljö med:
    - php (för att ändra och lägga till data lokalt, gäller adresserna)
    - html, css (för att presentera på touchscreen)
-   - js
+   - js (för att hantera utskrift och utskrivning av data på skärmen)
