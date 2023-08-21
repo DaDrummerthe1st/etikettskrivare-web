@@ -22,10 +22,10 @@ The different techniques used:
 1. Manually install Docker LAMP from [this](https://github.com/sprintcube/docker-compose-lamp) location.
    - copy the .env file included [here](resources/conf/dockerLAMP/.env)
    - Follow [install instructions](https://github.com/sprintcube/docker-compose-lamp#installation).
-  If .env-file is up for change, just run
-      ´´´console
+     If .env-file is up for change, just run
+      ```console
       docker-compose -d up
-      ´´´
+      ```
       in the same directory as you cloned the lamp-server
 1. Make sure the apache server has accessrights to this folder recursively
    - for Linux, use 
