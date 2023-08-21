@@ -4,7 +4,7 @@ This system is meant to be used as a computer touchscreen connected to a sticky 
 ## What to solve?
 Individual labels on each package are mandatory for functioning resorting at OMEX at Frigoscandia, Helsingborg. Previously used A4 printed papers are blown away or thrashed making the package unsendable.
 
-## How to solve it?  
+## Inclusion on label  
 1. **The label HAS to contain at least the receptients address.**
 1. Sender adress (for this system to be applied to other Frigoscandia Customers)
 1. Barcode for waybill number
@@ -12,13 +12,18 @@ Individual labels on each package are mandatory for functioning resorting at OME
 1. gMaps QR-code link with recieptients adress (when omex-personell are unsure of where it is bound for, meaning on which next truck to load it at omex)
 1. QR-code with complete label info
 
-## General
-The different techniques used:
+## General technical information
+### The different languages used:
 - php (changing and adding addressees)
 - html, css, js (displaying on touchscreen)
 - js (printer function)
+### Physical setup / wishlist
+* Touchscreen computer
+* Label printer
+* Scale
+* Barcode scanner
 
-### Manual setup settings for developing
+## Manual setup settings for local developing environment
 1. Manually install Docker LAMP from [this](https://github.com/sprintcube/docker-compose-lamp) location.
    - copy the .env file included [here](resources/conf/dockerLAMP/.env)
    - Follow [install instructions](https://github.com/sprintcube/docker-compose-lamp#installation).
@@ -33,12 +38,6 @@ The different techniques used:
    setfacl -R -m g:www-data:xrw .
    ```
    *m for append change and R for recursive.*
-
-## Physical setup / wishlist
-* Touchscreen computer
-* Label printer
-* Scale
-* Barcode scanner
 
 ## `TODO` - list
 - [ ] Set up a local server developer environment including 
