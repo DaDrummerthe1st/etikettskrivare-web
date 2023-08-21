@@ -17,12 +17,12 @@ Individual labels on each package are mandatory for functioning resorting at OME
 ## General
 This setup includes a Docker LAMP and a web tool for printing labels on a labelwriter. The first has to be manually installed because of local configuration demands. Purpose is to write travel labels for goods. Configuration right now is goods from Skånemejerier to clients.
    The different techniques used:
-   php (changing and adding addressees)
-   html, css, js (displaying on touchscreen)
-   js (printer function)
+   -php (changing and adding addressees)
+   - html, css, js (displaying on touchscreen)
+   - js (printer function)
 
 ## Setup
-* A touchscreen (prefered)
+* A touchscreen (preffered)
   * For choosing which adressee and sender to be used
     * Waybill number is fetched (`TODO` from where and how?)
     * Package number (CCNR(?)) is generated automatically or fetched (from where) and availble for external systems.
